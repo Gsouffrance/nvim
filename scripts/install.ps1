@@ -288,7 +288,8 @@ function ring_bell {
 }
 
 function _main {
-	if (-not $IsWindows) {
+	#if (-not $IsWindows) {
+	if (1){
 		_abort -Msg "This install script can only execute on Windows." -Type "DeviceError"
 	}
 
